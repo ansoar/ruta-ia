@@ -42,7 +42,14 @@ Leyenda: ⬜ pendiente · 🟡 en curso · ✅ dominado
 - **Primero a mano, después con frameworks.** Construimos cada cosa desde cero para entenderla y solo después usamos la herramienta que la resuelve.
 - **Un proyecto = una subcarpeta** dentro del módulo (por ejemplo `04-tool-use/p1-calculadora/`).
 - **Control de costos:** usar la API cuesta dinero. Los modelos pequeños y baratos (Haiku) sirven para practicar, y los grandes se reservan para cuando de verdad hacen falta. Configura un límite de gasto mensual en la consola del proveedor.
-- **Seguridad desde el día 1:** las API keys van en un archivo `.env`, que **nunca** se sube a git.
+- **Seguridad desde el día 1:** las API keys van en un archivo `.env`, que **nunca** se sube a git (ya está en `.gitignore`).
+
+### Flujo con Git
+- **Commit al terminar cada ejercicio o proyecto**, con un mensaje descriptivo:
+  `git add -A && git commit -m "M0: ejercicio ritmo.py terminado"`
+- **Prefijo con el módulo** en cada mensaje (`M0:`, `M3:`, `M12:`…) para que el historial cuente tu progreso.
+- **Revisa antes de cada commit** con `git status` y `git diff`, para no subir nada que no deba ir.
+- **Al cerrar un módulo**, márcalo ✅ en la tabla y crea una etiqueta: `git tag m0-completado`.
 
 ---
 
