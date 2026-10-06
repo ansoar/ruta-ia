@@ -1,0 +1,22 @@
+# Secretos (API keys) — NUNCA subir
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Datos locales de RAG / bases vectoriales
+chroma/
+*.sqlite3
+
+# Sistema / editores
+.DS_Store
+.vscode/
+.idea/
